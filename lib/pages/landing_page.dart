@@ -42,15 +42,15 @@ class _LandingPageState extends State<LandingPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white, // Figma background
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // Logo
+              // Logo t3 app 
               Image.asset(
-                "images/logoo.png", // your logo
+                "images/logoo.png", 
                 height: 350,
                 width: 350,
                 fit: BoxFit.contain,

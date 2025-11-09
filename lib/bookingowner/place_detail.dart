@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously, unused_local_variable, unused_import
+
 import 'dart:io';
 
 import 'package:booking_app/bookingowner/ouner_home.dart';
@@ -25,10 +27,10 @@ class _PlaceDetailState extends State<PlaceDetail> {
       File? selectedImage;
       final ImagePicker _picker = ImagePicker();
 
-      TextEditingController placenamecontroller= new TextEditingController();
-      TextEditingController placechargescontroller= new TextEditingController();
-      TextEditingController placeaddresscontroller= new TextEditingController();
-      TextEditingController placedesccontroller= new TextEditingController();
+      TextEditingController placenamecontroller= TextEditingController();
+      TextEditingController placechargescontroller= TextEditingController();
+      TextEditingController placeaddresscontroller= TextEditingController();
+      TextEditingController placedesccontroller= TextEditingController();
 
     Future getImage()async{
   
@@ -71,7 +73,7 @@ class _PlaceDetailState extends State<PlaceDetail> {
                 children: [
                   SizedBox(height: 20.0,),
                 selectedImage!=null?
-                Container(
+                SizedBox(
                   height: 200,
                   width: 200,
                   child: ClipRRect(

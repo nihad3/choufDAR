@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart'; // ✅ You forgot this import
 
 class Bottomnav extends StatefulWidget {
-  const Bottomnav({Key? key}) : super(key: key);
+  const Bottomnav({super.key});
 
   @override
   State<Bottomnav> createState() => _BottomnavState();

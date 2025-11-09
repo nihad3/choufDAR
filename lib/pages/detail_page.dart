@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_unnecessary_containers
+
 import 'package:booking_app/services/widget_support.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +21,7 @@ class _DetailPageState extends State<DetailPage> {
             children: [
               Stack(
                 children: [
-                  Container(
+                  SizedBox(
                     width: MediaQuery.of(context).size.width,
                     height: MediaQuery.of(context).size.height / 2.5,
                     child: ClipRRect(

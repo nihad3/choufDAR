@@ -14,4 +14,12 @@ class DatabaseMethods {
     .doc(id)
     .set(placeInfoMap);
   }
+  
+
+   Future addChauffeurInfo(Map<String, dynamic> chauffeurInfoMap, String id)async{
+    return await FirebaseFirestore.instance
+    .collection("Chauffeur")
+    .doc(id)
+    .set(chauffeurInfoMap);
+  }
 }

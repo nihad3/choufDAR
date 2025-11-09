@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_unnecessary_containers
+
 import 'package:booking_app/services/widget_support.dart';
 import 'package:flutter/material.dart';
 
@@ -48,11 +50,11 @@ class _HomeState extends State<Home>{
                         children: [
                           Icon(Icons.location_on, color: Colors.white,),
                           SizedBox(width: 10.0),
-                          Text("India, Delhi", style: AppWidget.whitetextstyle(20.0),)
+                          Text("Algeria, Alger", style: AppWidget.whitetextstyle(20.0),)
                         ],
                       ),
                       SizedBox(height: 30.0, ),
-                      Text("Hey,  Shivam! Tell us where you want to go ?", style:AppWidget.whitetextstyle(22.0)),
+                      Text("Hey,  win rak hab troh ?", style:AppWidget.whitetextstyle(22.0)),
                        SizedBox(height: 30.0, ),
                       Container(
                         padding: EdgeInsets.only(bottom: 5.0, top: 5.0),
@@ -80,7 +82,7 @@ class _HomeState extends State<Home>{
                 child: Text("The most relevent",style: AppWidget.headlinetextstyle(22.0)),
               ),
               SizedBox(height: 20.0,),
-              Container(
+              SizedBox(
                 height: 330,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
@@ -98,7 +100,7 @@ class _HomeState extends State<Home>{
                             ClipRRect(
                               borderRadius: BorderRadius.circular(30),
                               child: Image.asset(
-                                "images/hotel1.jpg",
+                                "images/alger.jpg",
                                  width: MediaQuery.of(context).size.width/1.2,),
                             ),
                             SizedBox(height:10.0,),
@@ -106,9 +108,9 @@ class _HomeState extends State<Home>{
                               padding: const EdgeInsets.only(left:10.0 ),
                               child: Row(
                                 children: [
-                                  Text("Hotel Beach",style:AppWidget.headlinetextstyle(22.0)),
+                                  Text("alger",style:AppWidget.headlinetextstyle(22.0)),
                                   SizedBox(width: MediaQuery.of(context).size.width/3.5,),
-                                  Text("\$20", style: AppWidget.headlinetextstyle(25.0))
+                                  Text("?DA", style: AppWidget.headlinetextstyle(25.0))
                                 ],
                               ),
                             ),
@@ -118,7 +120,7 @@ class _HomeState extends State<Home>{
                               child: Row(children: [
                                 Icon(Icons.location_on,color: Colors.blue,size:30.0),
                                 SizedBox(width:5.0,),
-                                Text("Near Main Market, Delhi", style: AppWidget.normaltextstyle(18.0))
+                                Text(" near babezouar ", style: AppWidget.normaltextstyle(18.0))
                               ],),
                             )
                           ],),
@@ -140,7 +142,7 @@ class _HomeState extends State<Home>{
                             ClipRRect(
                               borderRadius: BorderRadius.circular(30),
                               child: Image.asset(
-                                "images/hotel2.jpg",
+                                "images/apartment.jpg",
                                  width: MediaQuery.of(context).size.width/1.2, fit: BoxFit.cover,height: 230,),
                             ),
                             SizedBox(height:10.0,),
@@ -247,7 +249,7 @@ class _HomeState extends State<Home>{
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Image.asset(
-                                "images/mumbai.jpg",
+                                "images/apartment.jpg",
                                 height: 200,
                                 width: double.infinity,
                                 fit: BoxFit.cover,
@@ -255,7 +257,7 @@ class _HomeState extends State<Home>{
                               SizedBox(height: 10.0),
                               Padding(
                                 padding: const EdgeInsets.only(left: 20.0),
-                                child: Text("Mumbai", style: AppWidget.headlinetextstyle(20.0)),
+                                child: Text("oran", style: AppWidget.headlinetextstyle(20.0)),
                               ),
                               Padding(
                                 padding: const EdgeInsets.only(left: 20.0, bottom: 10.0),
@@ -288,7 +290,7 @@ class _HomeState extends State<Home>{
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Image.asset(
-                                "images/dubai.jpg",
+                                "images/alger.jpg",
                                 height: 200,
                                 width: double.infinity,
                                 fit: BoxFit.cover,
@@ -296,7 +298,7 @@ class _HomeState extends State<Home>{
                               SizedBox(height: 10.0),
                               Padding(
                                 padding: const EdgeInsets.only(left: 20.0),
-                                child: Text("Dubai", style: AppWidget.headlinetextstyle(20.0)),
+                                child: Text("telemcan", style: AppWidget.headlinetextstyle(20.0)),
                               ),
                               Padding(
                                 padding: const EdgeInsets.only(left: 20.0, bottom: 10.0),
@@ -304,7 +306,7 @@ class _HomeState extends State<Home>{
                                   children: [
                                     Icon(Icons.hotel, color: Colors.blue),
                                     SizedBox(width: 5.0),
-                                    Text("10 Hotels", style: AppWidget.normaltextstyle(17.0)),
+                                    Text("8 Hotels", style: AppWidget.normaltextstyle(17.0)),
                                   ],
                                 ),
                               ),
@@ -330,7 +332,7 @@ class _HomeState extends State<Home>{
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Image.asset(
-                                "images/newyork.jpg",
+                                "images/alger.jpg",
                                 height: 200,
                                 width: double.infinity,
                                 fit: BoxFit.cover,
@@ -371,7 +373,7 @@ class _HomeState extends State<Home>{
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Image.asset(
-                                "images/bali.jpg",
+                                "images/alger.jpg",
                                 height: 200,
                                 width: double.infinity,
                                 fit: BoxFit.cover,

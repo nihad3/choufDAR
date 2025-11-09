@@ -7,8 +7,7 @@ class VerificationPage extends StatefulWidget {
   final VoidCallback onComplete;
   final VoidCallback? onSkip;
 
-  const VerificationPage({Key? key, required this.onComplete, this.onSkip})
-      : super(key: key);
+  const VerificationPage({super.key, required this.onComplete, this.onSkip});
 
   @override
   State<VerificationPage> createState() => _VerificationPageState();
